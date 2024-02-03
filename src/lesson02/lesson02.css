@@ -1,0 +1,123 @@
+:root {
+    --line-border-fill: #3498db;
+    --line-border-empty: #eff4f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* no scroll when control is unactive */
+    overflow: hidden;
+    margin: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.backlink {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.progress-container::before {
+    content: '';
+    height: 4px;
+    background-color: var(--line-border-empty);
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+}
+
+.progress {
+    height: 4px;
+    background-color: var(--line-border-fill);
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 50%;
+    transition: 0.4s ease-in-out;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid var(--line-border-empty);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    transition: 0.4s ease-in-out
+}
+
+.circle.active {
+    border-color: var(--line-border-fill);
+    color: var(--line-border-fill);
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    outline: none;
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}

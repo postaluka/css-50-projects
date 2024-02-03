@@ -3,15 +3,64 @@
     padding: 0;
 }
 
-html, body {
-    background-color: #262626;
+html,
+body {
+    background-color: black;
     /* no scroll when control is unactive */
     overflow: hidden;
 }
 
-.webgl {
-    position: fixed;
-    top:0;
-    left:0;
-    outline: none;
+a:link,
+a:visited,
+a:active {
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    opacity: 1;
+    font-weight: 10;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: green;
+    position: relative;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 55;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
 }

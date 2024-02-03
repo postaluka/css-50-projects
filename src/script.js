@@ -11,6 +11,6 @@ const canvas = document.querySelector('canvas.webgl')
  * Experience class
  */
 
-const experience = new Experience(canvas)
+// const experience = new Experience(canvas)
 
 
