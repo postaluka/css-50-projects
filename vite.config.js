@@ -22,8 +22,8 @@ export default {
         rollupOptions: {
             input: {
                 main: path.resolve(__dirname, 'src/index.html'),
-                lesson01: path.resolve(__dirname, 'src/01/lesson01.html'),
-                lesson02: path.resolve(__dirname, 'src/02/lesson02.html'),
+                lesson01: path.resolve(__dirname, './src/Lessons/01/lesson01.html'),
+                lesson02: path.resolve(__dirname, './src/Lessons/02/lesson02.html'),
             }
         }
     }
