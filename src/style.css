@@ -33,6 +33,7 @@ a:hover {
     background-color: green;
     position: relative;
 
+
 }
 
 .grid-container {
@@ -47,6 +48,12 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        gap: 10px;
+    }
 }
 
 .grid-item {
