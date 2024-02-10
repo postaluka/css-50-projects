@@ -26,6 +26,7 @@ export default {
                 lesson02: path.resolve(__dirname, './src/Lessons/02/lesson02.html'),
                 lesson03: path.resolve(__dirname, './src/Lessons/03/lesson03.html'),
                 lesson04: path.resolve(__dirname, './src/Lessons/04/lesson04.html'),
+                lesson05: path.resolve(__dirname, './src/Lessons/05/lesson05.html'),
             }
         }
     }
